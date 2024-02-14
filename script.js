@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Data and initial styles
     const myList = ["Sure?", "Are you really sure??", "Please?", "Pretty please?", "I will be sad 宝贝", "I will be really sad", "Come on!"];
-    let yesWidth = 250;
-    let yesHeight = 115;
+    let yesWidth = 200;
+    let yesHeight = 100;
     let yesPadding = 20;
-    let size = 50;
+    let size = 40;
     let padding = 25;
     let font = 20;
 
@@ -36,9 +36,11 @@ document.addEventListener('DOMContentLoaded', function() {
         yesButton.style.width = `${yesWidth}px`;
         yesButton.style.height = `${yesHeight}px`;
         yesButton.style.padding = `${yesPadding}px`;
-        yesButton.style.fontSize = `${sizeFont}px`;
+        yesButton.style.fontSize = `40px`;
         questionStr.innerHTML = "Oh Yaaaay!!!";
         noButton.innerHTML = "我知道了 !";
+        noButton.style.fontSize = `40px`;
+
     }
 
     // Attach event listeners
