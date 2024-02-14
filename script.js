@@ -15,11 +15,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let font = 20;
 
     // Function for "No" button click event
-    function noBtnClickEvent(obj) {
+    function noBtnClickEvent() {
         let randomNum = Math.floor(Math.random() * myList.length);
 
-        if (obj.innerHTML === "No" || myList.includes(obj.innerHTML)) {
-            obj.innerHTML = myList[randomNum];
+        if (this.innerHTML === "No" || myList.includes(this.innerHTML)) {
+            this.innerHTML = myList[randomNum];
             yesButton.style.width = `${yesWidth + size}px`;
             yesButton.style.height = `${yesHeight + size}px`;
             yesButton.style.padding = `${yesPadding + padding}px`;
@@ -44,9 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Attach event listeners
-    noButton.addEventListener('click', function() {
-        noBtnClickEvent(this);
-    });
-
+    noButton.addEventListener('click', noBtnClickEvent);
     yesButton.addEventListener('click', yesBtnClickEvent);
 });
