@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Define the elements
+    // Elements
     const noButton = document.getElementById("noBtn");
     const yesButton = document.getElementById("yesBtn");
     const questionStr = document.getElementById("question");
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let padding = 25;
     let font = 20;
 
-    // Function for "No" button click event
+    // "No" button 
     function noBtnClickEvent() {
         let randomNum = Math.floor(Math.random() * myList.length);
 
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         font += 6;
     }
 
-    // Function for "YES" button click event
+    // "YES" button
     function yesBtnClickEvent() {
         gifBear.src = "bear-kiss-bear-kisses.gif"; 
         yesButton.style.width = `${yesWidth}px`;
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
 
-    // Attach event listeners
+    // Event listeners
     noButton.addEventListener('click', noBtnClickEvent);
     yesButton.addEventListener('click', yesBtnClickEvent);
 });
