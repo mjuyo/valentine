@@ -5,6 +5,7 @@ body, html {
     justify-content: center;
     align-items: center;
     background-color: #ffe0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
@@ -18,7 +19,7 @@ body, html {
 
 .questionStr {
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 28px;
     color: #d6336c;
 }
 
@@ -29,6 +30,10 @@ body, html {
     border-radius: 5px;
     cursor: pointer;
     color: #fff;
+    font-weight: bold;
+    border: none; 
+    font-size: 20px; 
+    outline: none; 
 }
 
 .yes_btn {
@@ -39,24 +44,6 @@ body, html {
     background-color: #dc3545;
 }
 
-.yes_btn, .no_btn {
-    display: inline-block;
-    margin: 20px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #fff;
-    border: none; /* Removes the default border */
-    font-size: 16px; /* Adjust font size as needed */
-    background-color: #28a745; /* Green for yes button */
-    outline: none; /* Removes the outline on focus */
-}
-
-.no_btn {
-    background-color: #dc3545; /* Red for no button */
-}
-
-/* Optionally, you can add :hover styles for better interactivity */
 .yes_btn:hover, .no_btn:hover {
     opacity: 0.8;
 }
